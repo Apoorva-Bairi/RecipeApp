@@ -1,21 +1,3 @@
-// import { useAppSelector } from "../app/hooks";
-// import RecipeCard from "../components/RecipeCard";
-
-// export default function Favorites() {
-//   const { items } = useAppSelector((s) => s.favorites);
-
-//   return (
-//     <div className="p-4">
-//       <h1 className="text-xl font-bold">Favorites</h1>
-
-//       <div className="grid grid-cols-2 gap-4">
-//         {items.map((r) => (
-//           <RecipeCard key={r.idMeal} recipe={r} />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
 import { useAppSelector } from "../app/hooks";
 import RecipeCard from "../components/RecipeCard";
 

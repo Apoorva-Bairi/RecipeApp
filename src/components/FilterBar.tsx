@@ -1,25 +1,3 @@
-// interface Props {
-//   onFilter: (category: string) => void;
-// }
-
-// const categories = ["All", "Chicken", "Beef", "Dessert"];
-
-// export default function FilterBar({ onFilter }: Props) {
-//   return (
-//     <div className="flex gap-2 mb-4 flex-wrap">
-//       {categories.map((cat) => (
-//         <button
-//           key={cat}
-//           onClick={() => onFilter(cat)}
-//           className="px-3 py-1 bg-gray-200 rounded hover:bg-orange-400 hover:text-white"
-//         >
-//           {cat}
-//         </button>
-//       ))}
-//     </div>
-//   );
-// }
-
 export default function FilterBar({ onFilter, active }: any) {
   const categories = ["All", "Chicken", "Beef", "Dessert"];
 

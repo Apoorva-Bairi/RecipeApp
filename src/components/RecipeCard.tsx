@@ -1,58 +1,3 @@
-// import { Link } from "react-router-dom";
-// import { useAppDispatch, useAppSelector } from "../app/hooks";
-// import {
-//   addFavorite,
-//   removeFavorite,
-// } from "../features/favorites/favoritesSlice";
-
-// export default function RecipeCard({ recipe }: any) {
-//   const dispatch = useAppDispatch();
-//   const favorites = useAppSelector((state) => state.favorites.items);
-
-//   const isFavorite = favorites.some(
-//     (item: any) => item.idMeal === recipe.idMeal
-//   );
-
-//   const handleFavorite = (e: React.MouseEvent) => {
-//     e.preventDefault(); // 🚨 stops Link navigation
-//     e.stopPropagation(); // 🚨 extra safety
-
-//     if (isFavorite) {
-//       dispatch(removeFavorite(recipe.idMeal));
-//     } else {
-//       dispatch(addFavorite(recipe));
-//     }
-//   };
-
-//   return (
-//     <Link to={`/recipe/${recipe.idMeal}`}>
-//       <div className="relative bg-white rounded shadow hover:shadow-lg transition overflow-hidden cursor-pointer">
-        
-    
-
-//         <img
-//           src={recipe.strMealThumb}
-//           alt={recipe.strMeal}
-//           className="w-full h-48 object-cover"
-//         />
-
-//         <div className="p-3">
-//           <h2 className="font-semibold">{recipe.strMeal}</h2>
-//           <p className="text-sm text-gray-500">
-//             {recipe.strCategory}
-//           </p>
-        
-//             {/* ❤️ Favorite Button */}
-        
-
-//         </div>
-       
-//       </div>
-      
-
-//     </Link>
-//   );
-// }
 import { Link } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../app/hooks";
 import {
@@ -91,7 +36,6 @@ export default function RecipeCard({ recipe }: any) {
 
         <div className="p-3 space-y-2">
   
-  {/* Title + Favorite Button Row */}
   <div className="flex justify-between items-center">
     <h2 className="font-semibold text-md">
       {recipe.strMeal}

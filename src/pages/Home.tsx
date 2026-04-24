@@ -37,7 +37,7 @@ if (loading) {
       <h1 className="text-2xl font-semibold mb-4">Recipes</h1>
 
       <SearchBar onSearch={setSearch} />
-      {/* <FilterBar onFilter={setFilter} /> */}
+    
      <FilterBar onFilter={handleFilter} active={filter} />
 
       {loading && <p>Loading...</p>}

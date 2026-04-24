@@ -28,7 +28,7 @@ export default function RecipeDetails() {
 
   const recipe = selectedRecipe;
 
-  // ✅ Favorites logic AFTER recipe is defined
+  
   const isFavorite = favorites.some(
     (item: any) => item.idMeal === recipe.idMeal
   );
@@ -43,7 +43,7 @@ export default function RecipeDetails() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      {/* Back Button */}
+   
       <button
         onClick={() => navigate(-1)}
         className="mb-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600"
@@ -52,7 +52,7 @@ export default function RecipeDetails() {
       </button>
 
       <div className="grid md:grid-cols-2 gap-6">
-        {/* LEFT: Image */}
+      
         <div>
           <img
             src={recipe.strMealThumb}
@@ -61,9 +61,8 @@ export default function RecipeDetails() {
           />
         </div>
 
-        {/* RIGHT: Info */}
         <div>
-          {/* Title + Favorite Button */}
+      
           <div className="flex justify-between items-center mb-4">
             <h1 className="text-3xl font-bold">
               {recipe.strMeal}
@@ -85,7 +84,6 @@ export default function RecipeDetails() {
             Category: {recipe.strCategory}
           </p>
 
-          {/* Ingredients */}
           <h2 className="text-xl font-semibold mb-2">
             Ingredients
           </h2>
@@ -105,7 +103,6 @@ export default function RecipeDetails() {
             })}
           </ul>
 
-          {/* Instructions */}
           <h2 className="text-xl font-semibold mb-2">
             Instructions
           </h2>
@@ -115,9 +112,8 @@ export default function RecipeDetails() {
           </p>
         </div>
       </div>
-
-      {/* YouTube Video */}
-      {recipe.strYoutube && (
+      
+    {recipe.strYoutube && (
         <div className="mt-6">
           <iframe
             className="w-full h-72 rounded"
