@@ -6,7 +6,7 @@ A dynamic and responsive recipe application built using React, Redux Toolkit, Ty
 
 ## 🚀 Live Demo
 
-👉 https://your-netlify-link.netlify.app
+👉 https://recipeapp-assignment.netlify.app/
 
 ---
 
